@@ -7,10 +7,10 @@
         @csrf
         <div class="row mb-3">
             <div class="col">
-                <input type="text" name="name" class="form-control" placeholder="Name">
+                <input type="text" id="ingredient" name="ingredient" class="form-control" placeholder="Name">
             </div>
             <div class="col">
-                <input type="text" name="quantitive" class="form-control" placeholder="Quantitive">
+                <input type="text" id = "quantity_import" name="quantity_import" class="form-control" placeholder="Quantitive">
             </div>
         </div>
         
