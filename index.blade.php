@@ -17,18 +17,17 @@
                 <th>No</th>
                 <th>Ingredient</th>
                 <th>Quantitive</th>
-                
                 <th>Action</th>
             </tr>
         </thead>
         <tbody>
             @if($imports->count() > 0)
-                @foreach($ingredient as $rs)
+                @foreach($imports as $rs)
                     <tr>
                         <td class="align-middle">{{ $loop->iteration }}</td>
+                        
                         <td class="align-middle">{{ $rs->ingredient }}</td>
                         <td class="align-middle">{{ $rs->quantity_import }}</td>
-                        
                         <td class="align-middle">
                             <div class="btn-group" role="group" aria-label="Basic example">
                                 <a href="{{ route('imports.show', $rs->id) }}" type="button" class="btn btn-secondary">Detail</a>
